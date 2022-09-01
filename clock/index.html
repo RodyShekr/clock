@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Clock</title>
+</head>
+
+<body>
+    <!--Time-->
+    <h1>Time</h1>
+    <h3>Universal Time Coordinated (UTC) </h3>
+    <div id="clock-utc"></div>
+
+    <h3>Berlin, Germany (UTC+2)</h3>
+    <div id="clock-ber-de"></div>
+
+    <h3>Los Angels, USA (UTC-7)</h3>
+    <div id="clock-la-usa"></div>
+
+    <h3>New York, USA (UTC-4)</h3>
+    <div id="clock-nw-usa"></div>
+
+    <!--stopwatch-->
+    <h1>StopWatch</h1>
+    <div class="container">
+        <p id="timeclock">
+            00:00:00,00
+        </p>
+        <button id="start" type="button" onclick="start()">Start</button>
+        <button id="stop" type="button" onclick="stop()">Stop</button>
+        <button id="reset" type="button" onclick="reset()">Reset</button>
+    </div>
+    <!-- oder die Id nehmen
+    <audio id="music" src="https://opengameart.org/sites/default/files/audio_preview/swing_0.mp3.ogg" style="display: none;" loop></audio>
+    -->
+
+    <script src="script.js"></script>
+</body>
+
+</html>
